@@ -20,10 +20,9 @@ import java.util.Scanner;
 public class PasswordEnhancer {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        //String oldPass = sc.nextLine();
-        String oldPass = "halloween";
-        enhancePassword(oldPass);
+        String oldPass = sc.nextLine();
+        String newPass = enhancePassword(oldPass);
+        System.out.println(newPass);
     }
 
     /**
@@ -31,27 +30,29 @@ public class PasswordEnhancer {
      */
     public static String enhancePassword(String oldPassword) {
       String newPass = "";
-        for (int i = 0; i <= oldPassword.length(); i++) {
-          if (oldPassword[i].equals("a") || oldPassword[i].equals("A")) {
-            newPass = oldPassword.substring(0, i) + "@" + oldPassword.substring(i + 1);
-          }
+        while (!oldPassword.equals("-999")) {
+            for (int i = 0; i < oldPassword.length(); i++) {
+                if (oldPassword.charAt(i) == 'a') {
+                    newPass = oldPassword.substring(0, i) + "@" + oldPassword.substring(i + 1);
+                }
 
-          if (oldPassword[i].equals("e") || oldPassword[i].equals("E")) {
-            newPass = oldPassword.substring(0, i) + "3" + oldPassword.substring(i + 1);
-          }
+                if (oldPassword.charAt(i) == 'e') {
+                    newPass = oldPassword.substring(0, i) + "3" + oldPassword.substring(i + 1);
+                }
 
-          if (oldPassword[i].equals("i") || oldPassword[i].equals("I")) {
-            newPass = oldPassword.substring(0, i) + "!" + oldPassword.substring(i + 1);
-          }
+                if (oldPassword.charAt(i) == 'i') {
+                    newPass = oldPassword.substring(0, i) + "!" + oldPassword.substring(i + 1);
+                }
 
-          if (oldPassword[i].equals("o") || oldPassword[i].equals("O")) {
-            newsPass = oldPassword.substring(0, i) + "0" + oldPassword.substring(i + 1);
-          }
-
-          if (oldPassword[i].equals("u") || oldPassword[i].equals("U")) {
-            newPass = oldPassword.substring(0, i) + "^" + oldPassword.substring(pos + 1);
-          }
-          return newPass;
+                if (oldPassword.charAt(i) == 'o') {
+                    newPass = oldPassword.substring(0, i) + "0" + oldPassword.substring(i + 1);
+                }
+          
+                if (oldPassword.charAt(i) == 'u') {
+                    newPass = oldPassword.substring(0, i) + "^" + oldPassword.substring(i + 1);
+                }
+            }   
         }
+        return newPass;
     }
 }
