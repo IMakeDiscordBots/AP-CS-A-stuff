@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Account
+comment0.text=\n\ \ \n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=prevBal\ newCharges
+comment2.target=java.lang.String\ processStatement(double,\ double)
+comment2.text=\n\ Method\:\ processStatement\n\ @param\ prevBal\ -\ double\ -\ the\ previous\ balance\ due\ on\ the\n\ \ \ \ \ \ \ \ credit\ card\n\ @param\ newCharges\ -\ double\ -\ The\ new\ charges\ from\ use\ of\ the\n\ \ \ \ \ \ \ \ credit\ card\ this\ month\n\ @return\ String\ -\ A\ text\ string\ which\ prints\ out\ the\ statement\n\ \ \ \ \ \ \ \ details\ as\ shown\ on\ the\ projects\ PDF\ file\n
+numComments=3

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=ConvertToRoman
+comment0.text=\n\ Write\ a\ description\ of\ class\ NumberToRoman\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\n\ main\ -\ asks\ the\ user\ to\ input\ an\ integer\ for\ conversion\ to\n\ its\ Roman\ Numeral\ Equivalent.\ If\ the\ user\ enters\:\n\ \ -\ a\ negative\ number,\ the\ program\ will\ exit\n\ \ -\ a\ number\ between\ 1\ and\ 100\ inclusive,\ the\ number\ will\ be\ converted\n\ \ -\ 0\ or\ a\ number\ greater\ than\ 100,\ the\ entry\ will\ be\ ignored\ and\n\ \ \ \ the\ user\ will\ be\ prompted\ for\ the\ next\ input\n
+comment2.params=num
+comment2.target=java.lang.String\ convertToRoman(int)
+comment2.text=\n\ You\ will\ need\ to\ fill\ in\ the\ return\ type\ and\ the\ parameters\n\ for\ this\ method\ (the\ "?"\ below)\ before\ your\ code\ will\ compile\!\n
+numComments=3
